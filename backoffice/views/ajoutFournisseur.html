@@ -1,0 +1,248 @@
+<HTML>
+
+<head>
+</head>
+
+<body>
+    <meta charset="utf-8">
+    <link href="../css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css' />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="../css/icon-font.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+
+    <div class="header-section" style="padding-left: 200px">
+        <!-- top_bg -->
+        <div class="top_bg">
+            <div class="header_top">
+                <div class="top_right">
+                    <ul>
+                        <li><a href="https://p.w3layouts.com/demos/apr-2016/12-04-2016/gretong_admin_panel/web/contact.html">help</a></li>
+                        |
+                        <li><a href="https://p.w3layouts.com/demos/apr-2016/12-04-2016/gretong_admin_panel/web/contact.html">Contact</a></li>
+                        |
+                        <li><a href="https://p.w3layouts.com/demos/apr-2016/12-04-2016/gretong_admin_panel/web/checkout.html">Delivery information</a></li>
+                    </ul>
+                </div>
+                <div class="top_left">
+                    <h2><span></span> Call us : 032 2352 782</h2>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- /top_bg -->
+    </div>
+
+
+    <div class="sidebar-menu">
+        <div class="menu">
+            <ul id="menu">
+                <li><a href="index.html"><i class="fa fa-tachometer"></i> <span>Home</span></a></li>
+                <li id="menu-academico"><a href="#"><i class="fa fa-table"></i> <span> New Arrivals</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul id="menu-academico-sub">
+                        <li id="menu-academico-avaliacoes"><a href="shoes.html">Shoes</a></li>
+                        <li id="menu-academico-boletim"><a href="sunglasses.html">Sunglasses</a></li>
+                    </ul>
+                </li>
+                <li id="menu-academico"><a href="sunglasses.html"><i class="fa fa-file-text-o"></i> <span>Sunglasses</span></a></li>
+                <li><a href="sweater.html"><i class="lnr lnr-pencil"></i> <span>Sweater</span></a></li>
+                <li id="menu-academico"><a href="catalog.html"><i class="fa fa-file-text-o"></i> <span>Catalog</span></a></li>
+                <li id="menu-academico"><a href="shoes.html"><i class="lnr lnr-book"></i> <span>Shoes</span></a></li>
+                <li><a href="bags.html"><i class="lnr lnr-envelope"></i> <span>Bags</span></a></li>
+                <li><a href="products.html"><i class="lnr lnr-chart-bars"></i> <span>Watches</span></a></li>
+                <li id="menu-academico"><a href="#"><i class="lnr lnr-layers"></i> <span>Tabs & Calender</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul id="menu-academico-sub">
+                        <li id="menu-academico-avaliacoes"><a href="tabs.html">Tabs</a></li>
+                        <li id="menu-academico-boletim"><a href="calender.html">Calender</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="lnr lnr-chart-bars"></i> <span>Services</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul>
+                        <li><a href="web.html"> webs</a></li>
+                        <li><a href="soins.html">Soins</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li id="menu-academico"><a href="afficherMarque.php"><i class="fa fa-table"></i> <span> Marques</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul id="menu-academico-sub">
+                        <li id="menu-academico-avaliacoes"><a href="afficherMarque.php">Afficher les Marques</a></li>
+                        <li id="menu-academico-avaliacoes"><a href="ajoutMarque.html">Ajouter marques</a></li>
+                    </ul>
+                </li>
+                <li id="menu-academico"><a href="afficherSoins.php"><i class="fa fa-table"></i> <span> Fournisseurs</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+                    <ul id="menu-academico-sub">
+                        <li id="menu-academico-avaliacoes"><a href="afficherFournisseur.php">Afficher les fournisseurs</a></li>
+                        <li id="menu-academico-avaliacoes"><a href="ajoutFournisseur.html">Ajouter fournisseurs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+   <center>
+    <form method="POST" action="ajoutFournisseur.php">
+      <br>
+       <caption style="margin-bottom:100px;">Ajouter Un Fournisseur </caption>
+        <table>
+            <div class="form-group">
+            <tr>
+                <td>CIN</td>
+                <td><input type="number" id="cin" name="cin" required class="form-control"></td>
+                <td><span id="misscin"></span></td>
+            </tr>
+            </div>
+            <div class="form-group">
+            <tr>
+                <td>Nom</td>
+                <td><input type="text" name="nom" id="nom" required class="form-control"></td>
+                <td><span id="missnom"></span></td>
+            </tr>
+            </div>
+            <tr>
+                <td>Prenom</td>
+                <td><input type="text" name="prenom" id="prenom" required class="form-control"></td>
+                <td><span id="missprenom"></span></td>
+            </tr>
+            <tr>
+                <td>date de naissance   </td>
+                <td><input type="date" name="datenaiss" required class="form-control"></td>
+            </tr>
+            <tr>
+                <td>marque</td>
+                <td><input type="text" name="marque" id="marque" required class="form-control"></td>
+                <td><span id="missmarque"></span></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email" id="email" required class="form-control"></td>
+                <td><span id="missemail"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="ajouter" id="bouton" value="ajouter" class="btn btn-danger" class="form-control" style="float:left;"></td>
+            </tr>
+        </table>
+    </form>
+    </center>
+    
+</body>
+
+<script>
+
+	var formValid = document.getElementById('bouton');
+            var id = document.getElementById('cin');
+            var misscin = document.getElementById('misscin');
+            var cinValid = /[0-9]/;
+            
+            formValid.addEventListener('click', validation);
+            
+            function validation(event){
+                //Si le champ est vide
+                if (cin.validity.valueMissing){
+                    event.preventDefault();
+                    misscin.textContent = 'cin manquant !';
+                    misscin.style.color = 'red';
+		
+					
+                //Si le format de données est incorrect
+                }else if (cinValid.test(cin.value) == false){
+                    event.preventDefault();
+                    misscin.textContent = 'Format incorrect';
+                    misscin.style.color = 'orange';
+                }
+            }
+	var formValid = document.getElementById('bouton');
+            var nom = document.getElementById('nom');
+            var missnom = document.getElementById('missnom');
+            var nomValid = /[A-Z-a-z]/;
+            
+            formValid.addEventListener('click', validation1);
+            
+            function validation1(event){
+                //Si le champ est vide
+                if (nom.validity.valueMissing){
+                    event.preventDefault();
+                    missnom.textContent = 'nom manquant !';
+                    missnom.style.color = 'red';
+                //Si le format de données est incorrect
+                }else if (nomValid.test(nom.value) == false){
+                    event.preventDefault();
+                    missnom.textContent = 'Format incorrect';
+                    missnom.style.color = 'orange';
+					
+                }else{ 
+                }
+				
+            }
+	var formValid = document.getElementById('bouton');
+            var prenom = document.getElementById('prenom');
+            var missprenom = document.getElementById('missprenom');
+            var prenomValid = /[A-Z-a-z]/;
+            
+            formValid.addEventListener('click', validation2);
+            
+            function validation2(event){
+                //Si le champ est vide
+                if (prenom.validity.valueMissing){
+                    event.preventDefault();
+                    missprenom.textContent = 'Prénom manquant';
+                    missprenom.style.color = 'red';
+					
+                //Si le format de données est incorrect
+                }else if (prenomValid.test(prenom.value) == false){
+                    event.preventDefault();
+                    missprenom.textContent = 'Format incorrect';
+                    missprenom.style.color = 'orange';
+                }
+            }
+	var formValid = document.getElementById('bouton');
+            var marque = document.getElementById('marque');
+            var missmarque = document.getElementById('missmarque');
+            var marqueValid = /[A-z-a-z]/;
+            
+            formValid.addEventListener('click', validation3);
+            
+            function validation3(event){
+                //Si le champ est vide
+                if (marque.validity.valueMissing){
+                    event.preventDefault();
+                    missmarque.textContent = 'marque manquante!';
+                    missmarque.style.color = 'red';
+                //Si le format de données est incorrect
+                }else if (marqueValid.test(marque.value) == false){
+                    event.preventDefault();
+                    missmarque.textContent = 'Format incorrect';
+                    missmarque.style.color = 'orange';
+                }
+            }
+    
+		var formValid = document.getElementById('bouton');
+            var email = document.getElementById('email');
+            var missemail = document.getElementById('missemail');
+            var emailValid = /[a-z-A-Z]/;
+            
+            formValid.addEventListener('click', validation4);
+            
+            function validation4(event){
+                //Si le champ est vide
+                if (email.validity.valueMissing){
+                    event.preventDefault();
+                    missemail.textContent = 'email manquant!';
+                    missemail.style.color = 'red';
+                //Si le format de données est incorrect
+                }else if (emailValid.test(email.value) == false){
+                    event.preventDefault();
+                    missemail.textContent = 'Format incorrect';
+                    missemail.style.color = 'orange';
+                }
+            }
+	
+	</script>
+</HTMl>
