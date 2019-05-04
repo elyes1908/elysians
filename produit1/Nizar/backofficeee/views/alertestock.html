@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/sweetalert.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+  <script>
+      function alertsweet(){
+          swal('Stock insuffisant!', 'veuillez demander de fournir des produits!', 'warning');
+      }
+        function alertsweet2(){
+          swal('Aucun probleme!', 'Votre stock est largement suffisant.', 'success');
+      }
+    </script>
+    
+   <form method="POST" action="alertestock.php">
+   <!-- <button type="button" name="alertestock" onclick="swal('Stock insuffisant!', 'veuillez demander de fournir des produits', 'warning');">AlerteStock</button>-->
+    <button id ="alertee" type="button" name="alertestock" onclick="alertsweet();">AlerteStock</button>
+    </form>
+    
+    
+    
+    
+</body>
+
+</html>
+
+
+ 
